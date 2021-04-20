@@ -67,10 +67,19 @@ export function UserIdentification() {
 
               <View style={styles.footer}>
 
-                <Button
-                  title="Confirmar"
-                  onPress={handleSubmit}
+                {isFilled ? (
+                  <Button
+                    title="Confirmar"
+                    onPress={handleSubmit}
                 />
+                ) : (
+                  <Button
+                    disabled={true}
+                    title="Confirmar"
+                    onPress={handleSubmit}
+                    style={styles.buttonDisabled}
+                />
+                )}
 
               </View>
 
@@ -128,5 +137,12 @@ const styles = StyleSheet.create({
     marginTop: 40,
     width: '100%',
     paddingHorizontal: 20
+  },
+  buttonDisabled: {
+    backgroundColor: colors.green_light,
+    height: 56,
+    borderRadius: 16,
+    justifyContent: 'center',
+    alignItems: 'center',
   }
 })

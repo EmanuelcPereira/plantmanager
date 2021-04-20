@@ -2,6 +2,7 @@ import React from 'react';
 import AppLoading from 'expo-app-loading';
 import { useFonts, Jost_400Regular, Jost_600SemiBold, Jost_500Medium } from '@expo-google-fonts/jost';
 import { UserIdentification } from './src/pages/UserIdentification';
+import { Confirmation } from './src/pages/Confirmation';
 // import { Welcome } from './src/pages/welcome';
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
     return <AppLoading />
   return (
     // <Welcome />
-    <UserIdentification />
+    // <UserIdentification />
+    <Confirmation />
   )
 }

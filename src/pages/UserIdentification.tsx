@@ -11,7 +11,6 @@ import {
   TouchableWithoutFeedback,
   Keyboard
 } from 'react-native';
-import { color } from 'react-native-reanimated';
 import { Button } from '../components/Button';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
